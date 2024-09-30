@@ -1,0 +1,29 @@
+<div class="login">
+    <div class="login__box">
+        <div class="login__header">
+            <img src="assets/images/ISIParts logo horizontal.png" alt="Logo" class="isi-icon">
+        </div>
+        <form class="login__body" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <input
+                type="text" 
+                placeholder="{{'login.username.placeholder' | translate }}"
+                formControlName="username"
+                class="form-control form-control-sm"
+                [ngClass]="{'is-invalid': username.touched && username.errors?.['required']}" />
+            <input
+                type="password"
+                placeholder="{{'login.password.placeholder' | translate }}"
+                formControlName="password"
+                class="form-control form-control-sm"
+                [ngClass]="{'is-invalid': password.touched && password.errors?.['required']}" />
+            <button 
+                class="btn btn-primary"
+                type="submit" 
+                [disabled]="!loginForm.valid"
+                >
+                {{ 'login.button.label' | translate }}
+            </button>
+        </form>
+    </div>
+</div>
+<app-notifications aria-live="polite" aria-atomic="true"></app-notifications>

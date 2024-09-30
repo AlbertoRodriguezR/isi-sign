@@ -1,0 +1,34 @@
+<div #screen class="signature-container">
+    <div class="header">
+        <div>
+            <img class="navbar__logo"
+                 src="assets\images\IsiPartsLogo.png" 
+                 title="Logo" >
+            <span class="navbar__brand">isiParts</span>
+        </div>
+        <h1 class="title">{{ 'signature.documents.header' | translate }}</h1>
+    </div>    
+    <div class="body">
+        <div class="documents">
+            <h2 class="documents-title">{{ 'signature.documents.list.title' | translate }}</h2>
+            <ul class="documents-list">
+               <li *ngFor="let doc of documents">
+                    {{doc.document}} - {{doc.description}}
+                </li>
+            </ul>
+        </div>
+        <span class="sign-label">Firma</span>
+        <canvas 
+            class="signature-canvas"   
+            width="650px"
+            height="350px"
+            id="signature_canvas"         
+            #signPad>
+        </canvas>
+    </div>
+    <footer class="footer">
+        <btn-isi class='footer__btn' [props]="clearButtonProps" (click)="clear()" />
+        <btn-isi class='footer__btn' [props]="saveButtonProps" (click)="save()" [disabled]="documents.length === 0"/>
+    </footer>
+</div>
+

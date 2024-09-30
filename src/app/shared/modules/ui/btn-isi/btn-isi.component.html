@@ -1,0 +1,6 @@
+<button class="btn {{props?.className}} isi-btn"
+        [type]="props.type"
+        [ngClass]="{'w-100': props.large}"
+        [disabled]="disabled">
+    {{props?.caption}}
+</button>

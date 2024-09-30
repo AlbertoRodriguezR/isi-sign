@@ -1,0 +1,11 @@
+@import 'variables';
+
+.isi-btn{
+    :disabled{
+        cursor: not-allowed;
+    }
+}
+
+.disabled{
+    cursor: not-allowed;
+}

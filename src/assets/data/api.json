@@ -1,0 +1,7 @@
+{
+    "url":"http://81.46.226.86:8080/isiWeb/web/v1",
+    "authentication":{
+         "url": "http://81.46.226.86:8080/isiWeb/static/auth/j_spring_security_check",
+         "logout": "http://81.46.226.86:8080/isiWeb/static/auth/j_spring_security_logout"
+    }
+}

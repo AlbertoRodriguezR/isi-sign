@@ -1,0 +1,83 @@
+@import 'variables.scss';
+
+// Sobreescribimos variables
+$primary: $primary-color;
+
+@import "bootstrap/scss/bootstrap";
+@import '/node_modules/bootstrap/scss/root';
+
+.btn, .btn:hover, .btn:focus, .btn:active, .btn:first-child:active{
+    color: #fff;    
+}
+
+ngb-pagination ul{
+    margin-bottom: 0;
+}
+
+.btn-primary{
+    &:disabled{
+        background-color: $light-gray;
+        border-color: $light-gray;
+    }    
+}
+
+.btn-outline-primary{
+    color: $primary-color;
+}
+
+.btn-outline-success{
+    color: var(--bs-btn-hover-border-color);
+}
+
+.tab-content > .tab-pane {
+    height: 100%;
+    visibility: hidden;
+  }
+  
+  .tab-content > .active {
+    visibility: visible;
+  }
+
+
+// fieldset, legend {
+//     all: revert;
+//  }
+
+// Sobreescribimos variables de los snippets de bootstrap (sidebar.css)
+
+
+// :not(.btn-check) + .btn:active{
+//     background-color: $primary-hover;
+//     border-color: $primary-hover;
+// }
+
+// .btn{    
+//     &:active{
+//         background-color: $primary-hover;
+//         border-color: $primary-hover;
+//     }
+// }
+
+// .btn-primary{
+//     background-color: $primary-color;
+//     border-color: $primary-color;
+//     color: white;
+    
+//     &:disabled{
+//         background-color: $light-gray;
+//         border-color: $light-gray;
+//     }    
+
+//     &:hover, &:focus{
+//         background-color: $primary-hover;
+//         border-color: $primary-hover;
+//     }
+// }
+
+// .form-control{
+//     &:focus{
+//         border-color: $primary-hover;
+//         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px $primary-hover;
+//         outline: 0 none;
+//     }
+// }

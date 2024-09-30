@@ -1,0 +1,7 @@
+{
+    "url":"/isiWeb/web/v1",
+    "authentication":{
+         "url": "/isiWeb/static/auth/j_spring_security_check",
+         "logout": "/isiWeb/static/auth/j_spring_security_logout"
+    }
+}

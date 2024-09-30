@@ -1,0 +1,19 @@
+{
+    "login.button.label": "Iniciar sesión",
+    "login.username.placeholder": "Usuario",
+    "login.password.placeholder": "Contraseña",
+    "login.error.unauthorized": "Usuario o contraseña incorrectos",
+    "login.error.forbidden": "Usuario no autorizado",
+    "login.error.not.found": "No se ha encontrado el servicio de inicio de sesión",
+    "login.error.unknown": "Ha ocurrido un error al iniciar sesión",
+    "login.error.session.not.found": "No se ha encontrado el servicio de la sesión de usuario",
+    "login.error.session.unknown": "Ha ocurrido un error al recuperar la sesión de usuario",
+    "login.profile.image.error.not.found": "No se ha encontrado el servicio de imagen de perfil",
+    "login.profile.image.error.unknown": "Ha ocurrido un error al recuperar la imagen de perfil",
+    "signature.save": "Guardar",
+    "signature.clear": "Limpiar",
+    "signature.documents.list.error": "Error al recuperar documentos",
+    "signature.documents.wo.label": "Orden de reparación",
+    "signature.documents.header": "Firma de documentos",
+    "signature.documents.list.title": "Lista de documentos por firmar"
+}

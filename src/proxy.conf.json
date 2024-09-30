@@ -1,0 +1,8 @@
+{
+  "/isiWeb/*": {
+    "target": "http://10.53.14.43:8810",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
